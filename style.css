@@ -1,0 +1,63 @@
+header{
+    margin-top: 140px;
+    margin-left: 147px;
+    margin-bottom: 58px;
+}
+header h1{
+    color: #d23a3a; 
+    font-family: Staatliches;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+header p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body{
+    background: #EFEFEF;
+}
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 436px;
+    display: block;/*torna o display block, fazendo com q ele empurre todos os elementos seguites descolarem pra baixo*/
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;/*faz com q a camada fique por traz da camada superior*/
+    background: #535971;
+    
+}
+
+form{
+    width: 750px;
+
+}
+
+.fieldset-wrapper{
+    color: #535971;
+font-family: Staatliches;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px;
+}
+
+.input-wrapper{
+    color: #4E4958;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}

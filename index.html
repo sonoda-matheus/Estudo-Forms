@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    
+    <title>Formulario</title>
+</head>
+<body>
+    <header> 
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para</br> agendar sua mentoria</p>            
+    </header>
+    <form id="my-form">
+        <fieldset>
+        <div class="fieldset-wrapper">
+            <legend>INFORMAÇÕES PESSOAIS</legend>
+            <div class="input-wrapper" id="personal-inf">
+                <label for="event-title">Nome</label>
+                <input type="text"
+                required>
+                
+                </div>
+
+        </div>
+
+        <legend>Informações do Evento</legend>
+                    <!-- o required abaixo serve para tornar o campo obrigatorio
+                    o minlength indica q no minimo deve ter 8 digitos o campo-->
+                    <div class="input-wrapper">
+                        <label for ="event-title">Título do evento<span>(mínimo 8 caracteres)</span></label>
+                        <input type="text" 
+                        id="event-title"
+                        required
+                        minlength="8">
+
+                    </div>
+        </fieldset>
+    </form>
+</body>
+</html>
