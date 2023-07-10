@@ -11,7 +11,9 @@
     
     <title>Formulario</title>
 </head>
+        
 <body>
+    <div class="page">
     <header> 
         <h1>Mentoria</h1>
         <p>Preencha o formulário abaixo para</br> agendar sua mentoria</p>            
@@ -20,27 +22,25 @@
         <fieldset>
         <div class="fieldset-wrapper">
             <legend>INFORMAÇÕES PESSOAIS</legend>
-            <div class="input-wrapper" id="personal-inf">
-                <label for="event-title">Nome</label>
-                <input type="text"
-                required>
-                
+            <div class="col-2">
+                <div class="input-wrapper">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name"
+                    required>
+                    
                 </div>
+                <div class="input-wrapper">
+                    <label for="last-name">Sobrenome</label>
+                    <input type="text" id="last-name"
+                    required>
+                    
+                </div>
+            </div>
 
         </div>
-
-        <legend>Informações do Evento</legend>
-                    <!-- o required abaixo serve para tornar o campo obrigatorio
-                    o minlength indica q no minimo deve ter 8 digitos o campo-->
-                    <div class="input-wrapper">
-                        <label for ="event-title">Título do evento<span>(mínimo 8 caracteres)</span></label>
-                        <input type="text" 
-                        id="event-title"
-                        required
-                        minlength="8">
-
-                    </div>
+                  
         </fieldset>
     </form>
+    </div>
 </body>
 </html>
