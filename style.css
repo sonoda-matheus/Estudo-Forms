@@ -1,7 +1,7 @@
 
 header{
     margin-top: 140px;
-   
+    margin-bottom: 30px; 
 
     color: #FFfffF;
     font-style: normal;
@@ -59,14 +59,20 @@ form{
 }
 
 legend{
-    margin: 64px;
     border-bottom: 1px solid #E6E6F0;
     padding-bottom: 16px;
 }
 
-.col-2{
+.col-2, .col-3{
     display: flex;
     gap: 22px;
+    
+}
+
+.col-2 .input-wrapper,
+.col-3 .input-wrapper{
+    width: 100%;/*serve para colocar a caixa do nome e o do sobrenome ocupem o esçao inteiro*/
+    margin-top: 36px;
 }
 
 .fieldset-wrapper{
@@ -76,17 +82,16 @@ legend{
     font-size: 24px;
     font-style: normal;
 
-
 }
 
 .input-wrapper{
     display: flex;
     flex-direction: column;
-    width: 360px;
+    
     
     color: #4E4958;
     font-family: Poppins;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
 
 }
@@ -95,4 +100,9 @@ legend{
     margin-top: 8px;
     margin-bottom: 16px;
     
+}
+.input-wrapper span{
+    color:#C1BCCC;
+    font-size: 14px;
+
 }
